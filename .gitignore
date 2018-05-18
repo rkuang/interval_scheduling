@@ -1,1 +1,3 @@
-.vscode/settings.json
+*.json
+*.o
+payoff_sched
