@@ -23,7 +23,7 @@ int main() {
         opt[i+1] = max(opt[i], activities[i]->payoff+opt[q]);
     }
 
-    cout << "Maximum Payoff:\t" << opt[n] << endl;
+    cout << "Maximum Payoff: " << opt[n] << endl;
 
     return 0;
 }
