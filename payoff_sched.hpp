@@ -31,7 +31,7 @@ int lastNonOverlapping(const vector<Activity *> activities, int i) {
     //         return j+1;
     // }
 
-    int val = 0;
+    int val = -1;
 
     int left = 0;
     int right = i;
@@ -46,7 +46,7 @@ int lastNonOverlapping(const vector<Activity *> activities, int i) {
         }
     }
 
-    return val;
+    return val+1;
 }
 
 #endif
