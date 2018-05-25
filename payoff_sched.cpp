@@ -22,7 +22,6 @@ int main() {
     int q;
     for (int i=0; i<n; i++) {
         q = lastNonOverlapping(activities, i);
-        // opt[i+1] = max(opt[i], activities[i]->payoff+opt[q]);
         if (opt[i] >= activities[i]->payoff+opt[q]) {
             opt[i+1] = opt[i];
             opt_sched[i+1] = opt_sched[i];
