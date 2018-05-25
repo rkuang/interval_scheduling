@@ -1,8 +1,6 @@
 #ifndef PAYOFF_SCHED_H
 #define PAYOFF_SCHED_H
 
-#include <algorithm>
-
 using namespace std;
 
 class Activity {

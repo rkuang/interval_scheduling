@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include "payoff_sched.hpp"
 
 using namespace std;
