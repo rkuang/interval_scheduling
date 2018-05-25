@@ -17,7 +17,7 @@ int main() {
     int opt[n+1];
     opt[0] = 0;
 
-    vector<Activity *> out[n+1];
+    vector<Activity *> opt_sched[n+1];
 
     int q;
     for (int i=0; i<n; i++) {
@@ -25,17 +25,17 @@ int main() {
         // opt[i+1] = max(opt[i], activities[i]->payoff+opt[q]);
         if (opt[i] >= activities[i]->payoff+opt[q]) {
             opt[i+1] = opt[i];
-            out[i+1] = out[i];
+            opt_sched[i+1] = opt_sched[i];
         } else {
             opt[i+1] = activities[i]->payoff+opt[q];
-            out[i+1] = out[q];
-            out[i+1].push_back(activities[i]);
+            opt_sched[i+1] = opt_sched[q];
+            opt_sched[i+1].push_back(activities[i]);
         }
     }
 
     cout << "Maximum Payoff: " << opt[n] << endl;
     vector<Activity *>::iterator it;
-    for (it=out[n].begin(); it!=out[n].end(); it++) {
+    for (it=opt_sched[n].begin(); it!=opt_sched[n].end(); it++) {
         cout << (*it)->start << " " << (*it)->end << " " << (*it)->payoff << endl;
     }
 
