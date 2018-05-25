@@ -26,11 +26,6 @@ struct ActivityComparator {
 };
 
 int lastNonOverlapping(const vector<Activity *> activities, int i) {
-    // for (int j = i-1; j >= 0; j--) {
-    //     if (activities[i]->start > activities[j]->end)
-    //         return j+1;
-    // }
-
     int val = -1;
 
     int left = 0;
@@ -45,7 +40,6 @@ int lastNonOverlapping(const vector<Activity *> activities, int i) {
             left = mid + 1;
         }
     }
-
     return val+1;
 }
 
