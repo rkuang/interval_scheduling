@@ -1,6 +1,5 @@
 *.json
 *.o
-payoff_sched
 gen_test.py
 *.in
 *.out
