@@ -1,5 +1,3 @@
 *.json
 *.o
 gen_test.py
-*.in
-*.out
