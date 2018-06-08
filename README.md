@@ -11,4 +11,4 @@ The algorithm is as follows:
 
 To run this program, do ```./payoff_sched < <input>```
 
-This was originally coded in C++, but I ran into a problem regarding C++ being a pass by value language, resulting in poor runtimes. An easy fix would be to pass a reference instead of the value, and will be explored in the future.
+This was originally coded in C++, but I ran into a problem regarding C++ being a pass by value language, resulting in poor runtimes. An easy fix would be to pass a reference instead of the value and will be explored in the future.
